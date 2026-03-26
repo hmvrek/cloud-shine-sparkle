@@ -3,6 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { DownloadCard } from "@/components/DownloadCard";
 import { FloatingParticles } from "@/components/FloatingParticles";
+import { AdBanner } from "@/components/AdBanner";
 import { Shield, Zap, Globe, AlertCircle, Loader2 } from "lucide-react";
 import { createClient } from "@/lib/supabase";
 
