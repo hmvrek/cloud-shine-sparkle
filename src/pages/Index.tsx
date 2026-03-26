@@ -148,6 +148,9 @@ export default function Home() {
           {/* File Upload - centered big button */}
           <FileUpload onUploadComplete={loadLinks} />
 
+          {/* Ad Banner */}
+          <AdBanner type="banner468" className="my-8" />
+
           {/* User's links */}
           <div className="max-w-2xl mx-auto mt-12 space-y-4">
             {isLoading ? (

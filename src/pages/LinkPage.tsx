@@ -62,7 +62,10 @@ export default function LinkPage() {
                 <a href="/" className="text-primary hover:underline text-sm">← Wróć na stronę główną</a>
               </div>
             ) : link ? (
-              <div className="w-full max-w-lg">
+              <div className="w-full max-w-lg space-y-6">
+                {/* Native Banner above download */}
+                <AdBanner type="native" className="mb-4" />
+
                 <DownloadCard
                   title={link.title}
                   description={link.description}
@@ -71,6 +74,10 @@ export default function LinkPage() {
                   previewUrl={link.url}
                   imageUrl={link.image_url}
                 />
+
+                {/* Banner 468x60 below download */}
+                <AdBanner type="banner468" className="mt-4" />
+
                 <div className="flex justify-center gap-6 mt-8">
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <Shield className="h-4 w-4 text-primary" /><span className="text-xs">Bezpieczne</span>
