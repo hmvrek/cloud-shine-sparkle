@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { Header } from "@/components/Header";
 import { FloatingParticles } from "@/components/FloatingParticles";
 import { FileUpload } from "@/components/FileUpload";
+import { AdBanner } from "@/components/AdBanner";
 import { Shield, Zap, Globe, Copy, Check, ExternalLink, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { createClient } from "@/lib/supabase";
@@ -89,7 +90,7 @@ export default function Home() {
     }
   };
 
-  const getShortUrl = (shortId: string) => `${window.location.origin}/link/?id=${shortId}`;
+  const getShortUrl = (shortId: string) => `${window.location.origin}${window.location.pathname}#/link?id=${shortId}`;
 
   const handleCopy = async (shortId: string) => {
     try {
@@ -146,6 +147,9 @@ export default function Home() {
 
           {/* File Upload - centered big button */}
           <FileUpload onUploadComplete={loadLinks} />
+
+          {/* Ad Banner */}
+          <AdBanner type="banner468" className="my-8" />
 
           {/* User's links */}
           <div className="max-w-2xl mx-auto mt-12 space-y-4">

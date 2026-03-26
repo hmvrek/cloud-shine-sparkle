@@ -10,7 +10,7 @@ export function Header() {
       <div className="max-w-6xl mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-3 group cursor-pointer">
+          <a href="#/" className="flex items-center gap-3 group cursor-pointer">
             <div className="w-10 h-10 rounded-xl bg-primary/20 border border-primary/30 flex items-center justify-center group-hover:scale-110 group-hover:bg-primary/30 transition-all duration-300">
               <Upload className="w-5 h-5 text-primary" />
             </div>
@@ -46,7 +46,7 @@ export function Header() {
                 </Button>
               </div>
             ) : (
-              <a href="/login">
+              <a href="#/login">
                 <Button
                   variant="ghost"
                   size="sm"
@@ -59,12 +59,14 @@ export function Header() {
             )}
 
             {/* LekkaWrzuta Button */}
-            <Button
-              className="rounded-full h-10 px-5 bg-primary hover:bg-primary/80 text-primary-foreground font-medium flex items-center gap-2 shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all duration-300"
-            >
-              <Upload className="w-4 h-4" />
-              LekkaWrzuta
-            </Button>
+            <a href="#/">
+              <Button
+                className="rounded-full h-10 px-5 bg-primary hover:bg-primary/80 text-primary-foreground font-medium flex items-center gap-2 shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all duration-300"
+              >
+                <Upload className="w-4 h-4" />
+                LekkaWrzuta
+              </Button>
+            </a>
           </div>
         </div>
       </div>
