@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { Header } from "@/components/Header";
 import { FloatingParticles } from "@/components/FloatingParticles";
 import { FileUpload } from "@/components/FileUpload";
+import { AdBanner } from "@/components/AdBanner";
 import { Shield, Zap, Globe, Copy, Check, ExternalLink, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { createClient } from "@/lib/supabase";
