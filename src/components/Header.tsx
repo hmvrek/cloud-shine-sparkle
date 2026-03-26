@@ -59,7 +59,7 @@ export function Header() {
             )}
 
             {/* LekkaWrzuta Button */}
-            <a href="/">
+            <a href="#/">
               <Button
                 className="rounded-full h-10 px-5 bg-primary hover:bg-primary/80 text-primary-foreground font-medium flex items-center gap-2 shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all duration-300"
               >
