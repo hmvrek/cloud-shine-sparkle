@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    --background: 150 30% 6%;
+    --foreground: 0 0% 96%;
+
+    --card: 150 25% 10%;
+    --card-foreground: 0 0% 96%;
+
+    --popover: 150 28% 8%;
+    --popover-foreground: 0 0% 96%;
+
+    --primary: 142 70% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 18% 15%;
+    --secondary-foreground: 0 0% 96%;
+
+    --muted: 150 15% 13%;
+    --muted-foreground: 150 10% 55%;
+
+    --accent: 160 60% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 96%;
+
+    --border: 150 20% 18%;
+    --input: 150 18% 14%;
+    --ring: 142 70% 45%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 150 30% 5%;
+    --sidebar-foreground: 0 0% 96%;
+    --sidebar-primary: 142 70% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 150 18% 13%;
+    --sidebar-accent-foreground: 0 0% 96%;
+    --sidebar-border: 150 18% 16%;
+    --sidebar-ring: 142 70% 45%;
+
+    --glow-primary: 142 70% 45%;
+    --glow-accent: 160 60% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.3;
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-10px) translateX(-10px);
+    opacity: 0.4;
+  }
+  75% {
+    transform: translateY(-30px) translateX(5px);
+    opacity: 0.5;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-float {
+  animation: float var(--float-duration, 15s) ease-in-out infinite;
+  animation-delay: var(--float-delay, 0s);
+}
+
+.animate-shimmer {
+  animation: shimmer 2s ease-in-out infinite;
+  background-size: 200% 100%;
+}
