@@ -90,7 +90,7 @@ export default function Home() {
     }
   };
 
-  const getShortUrl = (shortId: string) => `${window.location.origin}/link/?id=${shortId}`;
+  const getShortUrl = (shortId: string) => `${window.location.origin}${window.location.pathname}#/link?id=${shortId}`;
 
   const handleCopy = async (shortId: string) => {
     try {
