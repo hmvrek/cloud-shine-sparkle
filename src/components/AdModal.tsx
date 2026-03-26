@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { X, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AdBanner } from "@/components/AdBanner";
 
 interface AdModalProps {
   isOpen: boolean;
