@@ -59,12 +59,14 @@ export function Header() {
             )}
 
             {/* LekkaWrzuta Button */}
-            <Button
-              className="rounded-full h-10 px-5 bg-primary hover:bg-primary/80 text-primary-foreground font-medium flex items-center gap-2 shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all duration-300"
-            >
-              <Upload className="w-4 h-4" />
-              LekkaWrzuta
-            </Button>
+            <a href="/">
+              <Button
+                className="rounded-full h-10 px-5 bg-primary hover:bg-primary/80 text-primary-foreground font-medium flex items-center gap-2 shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all duration-300"
+              >
+                <Upload className="w-4 h-4" />
+                LekkaWrzuta
+              </Button>
+            </a>
           </div>
         </div>
       </div>

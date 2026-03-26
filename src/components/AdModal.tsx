@@ -42,11 +42,8 @@ export function AdModal({ isOpen, onClose, onComplete }: AdModalProps) {
           )}
         </div>
         <div className="p-6">
-          <div className="w-full min-h-[250px] bg-secondary/50 rounded-lg flex items-center justify-center border border-border/50">
-            <div className="text-center text-muted-foreground">
-              <p className="text-sm font-medium">Reklama</p>
-              <p className="text-xs mt-1">Ładowanie reklamy...</p>
-            </div>
+          <div className="w-full min-h-[250px] bg-secondary/50 rounded-lg flex items-center justify-center border border-border/50 overflow-hidden">
+            <AdBanner type="native" />
           </div>
           <p className="text-xs text-muted-foreground text-center mt-3">
             Reklamy wspierają nasz serwis i pozwalają oferować darmowe pobieranie
